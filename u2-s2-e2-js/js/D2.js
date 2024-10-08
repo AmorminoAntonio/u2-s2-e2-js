@@ -69,9 +69,44 @@ if (number3 === 8 || number4 === 8) {
   Alla fine mostra il risultato in console.
 */
 
-let var1 = 13;
-let var2 = 4;
-let var3 = 21;
+let a = 350;
+let b = 174;
+let c = 98;
+let maggiore = "";
+let minore = "";
+let intermedio = "";
+
+if (a > b && a > c) {
+  maggiore = a;
+  if (b > c) {
+    minore = c;
+    intermedio = b;
+  } else {
+    minore = b;
+    intermedio = c;
+  }
+}
+if (b > a && b > c) {
+  maggiore = b;
+  if (a > c) {
+    intermedio = a;
+    minore = c;
+  } else {
+    minore = a;
+    intermedio = c;
+  }
+}
+if (c > a && c > b) {
+  maggiore = c;
+  if (b > a) {
+    intermedio = b;
+    minore = a;
+  } else {
+    minore = b;
+    intermedio = a;
+  }
+}
+console.log("L ordine dei numeri secondo il valore è:" + maggiore + ", " + intermedio + ", " + minore);
 
 
 
@@ -83,9 +118,9 @@ let var3 = 21;
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-let a = 37;
-let b = "fabio";
-let c = true;
+let n = 37;
+let s = "fabio";
+let boo = true;
 
 console.log(typeof 37, typeof "fabio", typeof true);
 
